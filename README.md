@@ -11,7 +11,7 @@
 ### STEP 5: Display the results.
 
 ## PROGRAM:
-
+```
 import matplotlib.pyplot as plt
 import pandas as pd
 df=pd.read_csv("Dataset.csv",parse_dates=["Date"],index_col="Date")
@@ -22,7 +22,7 @@ df["2022-04-01":"2022-07-31"]
 df.Close.resample('M').mean()
 mean=df.Close.resample('M').mean().plot(kind="bar")
 mean=df.Close.resample('Y').mean().plot(kind="bar")
-
+```
 
 ## OUTPUT:
 
